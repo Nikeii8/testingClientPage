@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="js">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+	<title>PVR Tech Admin | Calendar</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	<!-- Favicon -->
+	<link rel="icon" href="http://via.placeholder.com/32x32" sizes="32x32" type="image/png">
+	<link rel="stylesheet" type="text/css" href="mailbox.css">
+	
+
+	<!-- ================== BEGIN BASE CSS STYLE ================== -->
+	
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<link href="assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/css/style.css" rel="stylesheet" />
+	<link href="assets/css/style-responsive.css" rel="stylesheet" />
+	<link href="assets/css/default.css" rel="stylesheet" id="theme" />
+	<!-- ================== END BASE CSS STYLE ================== -->
+
+	<!-- ================== BEGIN PAGE LEVEL STYLE ================== -->
+	<link href="assets/plugins/sweetalert/sweetalert.css" rel="stylesheet" />
+	<link href="assets/plugins/fullcalendar/fullcalendar.print.css" rel="stylesheet" media='print' />
+	<link href="assets/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" />
+	<!-- ================== END PAGE LEVEL STYLE ================== -->
+	
+
+
+</head>
+
+<body>
+	<!-- begin #page-loader -->
+	<div class="preloader">
+		<div class="loading">
+			<h2>
+				Loading...
+			</h2>
+			<span class="progress"></span>
+		</div>
+	</div>
+	<!-- end #page-loader -->
+
+	<!-- begin #pvr-container -->
+	<div id="pvr-container" class="fade fixed_sidebar fixed_header">
+		<!-- begin #header -->
+		<!-- begin container-fluid -->
+		<!-- begin mobile sidebar expand / collapse button -->
+
+		<!-- end mobile sidebar expand / collapse button -->
+
+		<!-- begin navbar-collapse -->
+
+		<!-- end navbar-collapse -->
+
+		<!-- begin header navigation right -->
+		
+<div class="container">
+		<ul class="list-inline">
+			<li class="dropdown navbar-user">
+				<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="material-icons m-r-5">account_box</i>
+                        <span class="hidden-xs">Usario</span> <b class="caret"></b>
+                    </a>
+				<ul class="dropdown-menu animated fadeInDown">
+					<li class="arrow"></li>
+					<li>
+						<a href="javascript:void(0)">
+                                <span class="badge badge-success pull-right m-t-3">2</span>
+                                <i class="material-icons">mail_outline</i> Message
+                            </a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+                                <i class="material-icons">account_circle</i> Profile
+                            </a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+                                <i class="material-icons">settings</i> Setting
+                            </a>
+					</li>
+					<li class="divider"></li>
+					<li>
+						<a href="javascript:void(0)">
+                                <i class="material-icons">lock_outline</i> Lock Screen
+                            </a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+                                <i class="material-icons">power_settings_new</i> Logout
+                            </a>
+					</li>
+				</ul>
+			</li>
+
+			<li id="btn-search">
+				<a href="javascript:void(0)" class="">
+                        <i class="material-icons">search</i></a>
+			</li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle">
+                        <i class="material-icons">notifications</i>
+                        <span class="label"></span>
+                    </a>
+
+
+				<ul class="dropdown-menu media-list pull-right animated fadeInDown">
+					<li class="dropdown-header">Notifications (3)</li>
+					<li class="media">
+						<a href="javascript:void(0)">
+							<div class="media-left">
+								<img src="http://via.placeholder.com/128x128" class="media-object" alt="" />
+							</div>
+							<div class="media-body">
+								<h6 class="media-heading">Andrew</h6>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+								<div class="text-muted f-s-11">25 minutes ago</div>
+							</div>
+						</a>
+					</li>
+					<li class="media">
+						<a href="javascript:void(0)">
+							<div class="media-left">
+								<img src="http://via.placeholder.com/128x128" class="media-object" alt="" />
+							</div>
+							<div class="media-body">
+								<h6 class="media-heading">Need Action</h6>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+								<div class="text-muted f-s-11">35 minutes ago</div>
+							</div>
+						</a>
+					</li>
+					<li class="media">
+						<a href="javascript:void(0)">
+							<div class="media-left"><i class="fa fa-plus media-object bg-green"></i></div>
+							<div class="media-body">
+								<h6 class="media-heading"> New User Registered</h6>
+								<div class="text-muted f-s-11">1 hour ago</div>
+							</div>
+						</a>
+
+					</li>
+				</ul>
+			</li>
+
+</ul>
+</div>
+
+
+
+		
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+	<div class="dropdown-menu dropdown-menu-lg">
+		<div class="row">
+			<div class="col-md-4 col-sm-4">
+				<h4 class="dropdown-header">Lorem ipsum</h4>
+				<div class="row">
+					<div class="col-md-6 col-xs-6">
+						<ul class="nav b-r">
+							<li><a href="pvr_ess_login_v1.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i> Login v1</a>
+							</li>
+							<li><a href="pvr_ess_login_v2.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i> Login v2</a>
+							</li>
+							<li><a href="pvr_ess_registration.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i>
+                                                    Registration</a></li>
+							<li><a href="pvr_ess_forgot_password.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i> Forgot
+                                                    Password</a></li>
+							<li><a href="pvr_ess_lock_screen.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i> Lock
+                                                    Screen</a></li>
+							<li><a href="pvr_ess_coming_soon.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i> Coming
+                                                    Soon</a></li>
+							<li><a href="pvr_ess_404_v1.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i> 404
+                                                    v1</a></li>
+							<li><a href="pvr_ess_404_v2.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i> 404
+                                                    v2</a></li>
+							<li><a href="pvr_ess_profile.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i> Profile</a>
+							</li>
+							<li><a href="pvr_ess_cookie_v1.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i> Cookie
+                                                    v1</a></li>
+							<li><a href="pvr_ess_cookie_v2.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i> Cookie
+                                                    v2</a></li>
+						</ul>
+					</div>
+					<div class="col-md-6 col-xs-6">
+						<ul class="nav b-r">
+							<li><a href="pvr_ui_buttons.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i> Buttons</a>
+							</li>
+							<li><a href="pvr_ui_spinner_buttons.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i> Spinner
+                                                    Buttons</a></li>
+							<li><a href="pvr_ui_badges.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i>
+                                                    Badges</a></li>
+							<li><a href="pvr_ui_typography.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i>
+                                                    Typography</a></li>
+							<li><a href="pvr_ui_tabs.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i> Tabs &
+                                                    Accordion</a></li>
+							<li><a href="pvr_ui_progress.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i> Progress
+                                                    Bar</a></li>
+							<li><a href="pvr_ui_grid_system.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i> Grid
+                                                    System</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<h4 class="dropdown-header">Lorem ipsum</h4>
+				<div class="row">
+					<div class="col-md-6 col-xs-6">
+						<ul class="nav b-r">
+							<li><a href="pvr_components_date_time.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i> Date &
+                                                    Time Pickers</a></li>
+							<li><a href="pvr_components_color.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i> Color
+                                                    Pickers</a></li>
+							<li><a href="pvr_components_select2.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i> Select2
+                                                    Dropdown</a></li>
+							<li><a href="pvr_components_bootstrap_select.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i>
+                                                    Bootstrap Select</a></li>
+							<li><a href="pvr_components_list_box.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i> List Box</a>
+							</li>
+							<li><a href="pvr_components_clipboard.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i>
+                                                    Clipboard</a></li>
+							<li><a href="pvr_components_tags.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i>
+                                                    Bootstrap Tags</a></li>
+							<li><a href="pvr_components_spin.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i>
+                                                    Bootstrap Touchspin</a></li>
+							<li><a href="pvr_components_session.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i> Session</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-6 col-xs-6">
+						<ul class="nav b-r">
+							<li><a href="pvr_app_ecommerce.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i>
+                                                    E-commerce</a></li>
+							<li><a href="pvr_app_blog.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i> Blog</a>
+							</li>
+							<li><a href="pvr_app_file_manager.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i> File
+                                                    Manager</a></li>
+							<li><a href="pvr_app_contact_v1.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i> Contact
+                                                    v1</a></li>
+							<li><a href="pvr_app_contact_v2.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i> Contact
+                                                    v2</a></li>
+							<li><a href="pvr_app_calendar.html"><i
+                                                        class="fa fa-angle-right fa-fw fa-lg text-inverse"></i> Calendar</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<h4 class="dropdown-header">Lorem ipsum</h4>
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="registered-users-list clearfix">
+							<li class="zoom_in"><a href="javascript:void(0)"> <img
+                                                        src="http://via.placeholder.com/128x128" alt=""> </a>
+								<h4 class="username text-ellipsis"> Savory Posh
+									<small>Algerian</small>
+								</h4>
+							</li>
+							<li class="zoom_in"><a href="javascript:void(0)"> <img
+                                                        src="http://via.placeholder.com/128x128" alt=""> </a>
+								<h4 class="username text-ellipsis"> Ancient Caviar
+									<small>Korean</small>
+								</h4>
+							</li>
+							<li class="zoom_in"><a href="javascript:void(0)"> <img
+                                                        src="http://via.placeholder.com/128x128" alt=""> </a>
+								<h4 class="username text-ellipsis"> Marble Lungs
+									<small>Indian</small>
+								</h4>
+							</li>
+							<li class="zoom_in"><a href="javascript:void(0)"> <img
+                                                        src="http://via.placeholder.com/128x128" alt=""> </a>
+								<h4 class="username text-ellipsis"> Blank Bloke
+									<small>Japanese</small>
+								</h4>
+							</li>
+							<li class="zoom_in"><a href="javascript:void(0)"> <img
+                                                        src="http://via.placeholder.com/128x128" alt=""> </a>
+								<h4 class="username text-ellipsis"> Hip Sculling
+									<small>Cuban</small>
+								</h4>
+							</li>
+							<li class="zoom_in"><a href="javascript:void(0)"> <img
+                                                        src="http://via.placeholder.com/128x128" alt=""> </a>
+								<h4 class="username text-ellipsis"> Flat Moon
+									<small>Nepalese</small>
+								</h4>
+							</li>
+							<li class="zoom_in"><a href="javascript:void(0)"> <img
+                                                        src="http://via.placeholder.com/128x128" alt=""> </a>
+								<h4 class="username text-ellipsis"> Packed Puffs
+									<small>Malaysian&gt;</small>
+								</h4>
+							</li>
+							<li class="zoom_in"><a href="javascript:void(0)"> <img
+                                                        src="http://via.placeholder.com/128x128" alt=""> </a>
+								<h4 class="username text-ellipsis"> Clay Hike
+									<small>Swedish</small>
+								</h4>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- end header navigation right -->
+
+	<!-- end container-fluid -->
+
+	<!-- end #header -->
+
+	<!-- begin #sidebar -->
+
+	<div class="container">
+
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+
+					<ul class="nav navbar-nav">
+
+						<li><a href="Home.html">Informacion</a></li>
+						<li><a href="Home.html">Contrato</a></li>
+						<li><a href="Home.html">Logros</a></li>
+						<li><a href="index.html">Reservas</a></li>
+						<li><a href="notif_main.html">Notificaciones</a></li>
+						
+					</ul>
+				</div>
+			</nav>
+		</div>
+	
+	<div class="container mailbox">
+		
+		<div class="col-md-3">
+			
+			<a href="notif_main.html" class="btn btn-primary btn-block">Back to Inbox</a>
+
+			<br>
+
+			<div class="mailbox-box mailbox-box-solid">
+				
+				<div class="mailbox-box-header">
+					
+					<h3 class="mailbox-box-title">Folders</h3>
+
+				</div>
+
+				<div class="mailbox-box-body">
+					
+					<ul class="vertical-list">
+						
+						<li class="active"><a href="notif_main.html">
+							<i class="fa fa-inbox"></i>
+							Inbox
+							<span class="label label-primary pull-right flip">12</span>
+						</a></li>
+						
+						<li><a href="index.html">
+							<i class="fa fa-envelope-o"></i>
+							Sent
+						</a></li>
+						
+						<li><a href="index.html">
+							<i class="fa fa-file-text-o"></i>
+							Drafts
+							<span class="label label-warning pull-right flip">45</span>
+						</a></li>
+						
+						<li><a href="index.html">
+							<i class="fa fa-filter"></i>
+							Junk
+						</a></li>
+						
+						<li><a href="index.html">
+							<i class="fa fa-trash"></i>
+							Trash
+						</a></li>
+
+					</ul>
+
+				</div>
+
+			</div> <!-- End Box -->
+
+			<div class="mailbox-box mailbox-box-solid">
+				
+				<div class="mailbox-box-header">
+					
+					<h3 class="mailbox-box-title">Labels</h3>
+
+				</div>
+
+				<div class="mailbox-box-body">
+					
+					<ul class="vertical-list">
+						
+						<li><a href="#">
+							<i class="fa fa-circle-o"></i>
+							Important
+						</a></li>
+						
+						<li><a href="#">
+							<i class="fa fa-circle-o"></i>
+							Promotions
+						</a></li>
+						
+						<li><a href="#">
+							<i class="fa fa-circle-o"></i>
+							Social
+						</a></li>
+
+					</ul>
+
+				</div>
+
+			</div> <!-- End Box -->
+
+		</div>
+		<!-- Sidebar -->
+
+		<div class="col-md-9">
+			
+			<div class="mailbox-box mailbox-box-primary">
+				
+				<div class="mailbox-box-header">
+					
+					<h3 class="mailbox-box-title">Compose New Message</h3>
+
+				</div>
+
+				<div class="mailbox-box-body">
+					
+					<form class="mailbox-compose">
+						<div class="form-group">
+						    <input class="form-control" type="text" placeholder="To:" />
+						</div>
+						
+						<div class="form-group">
+						    <input class="form-control" type="text" placeholder="Subject:" />
+						</div>
+						
+						<div class="form-group">
+
+							<div id="toolbar">
+							    <ul class="wysihtml5-toolbar">
+								    <li>
+								        <div class="btn-group">
+								            <a class="btn btn-default" data-wysihtml5-command="bold" href="javascript:;" tabindex="-1" title="CTRL+B" unselectable="on">
+								                Bold
+								            </a>
+								            <a class="btn btn-default" data-wysihtml5-command="italic" href="javascript:;" tabindex="-1" title="CTRL+I" unselectable="on">
+								                Italic
+								            </a>
+								            <a class="btn btn-default wysihtml5-command-active" data-wysihtml5-command="underline" href="javascript:;" tabindex="-1" title="CTRL+U" unselectable="on">
+								                Underline
+								            </a>
+								            <a class="btn btn-default" data-wysihtml5-command="small" href="javascript:;" tabindex="-1" title="CTRL+S" unselectable="on">
+								                Small
+								            </a>
+								        </div>
+								    </li>
+								    <li>
+								        <a class="btn btn-default" data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="blockquote" data-wysihtml5-display-format-name="false" href="javascript:;" tabindex="-1" unselectable="on">
+								            <span class="fa fa-quote-left">
+								            </span>
+								        </a>
+								    </li>
+								    <li>
+								        <div class="btn-group">
+								            <a class="btn btn-default" data-wysihtml5-command="insertUnorderedList" href="javascript:;" tabindex="-1" title="Unordered list" unselectable="on">
+								                <span class="glyphicon glyphicon-list">
+								                </span>
+								            </a>
+								            <a class="btn btn-default" data-wysihtml5-command="insertOrderedList" href="javascript:;" tabindex="-1" title="Ordered list" unselectable="on">
+								                <span class="glyphicon glyphicon-th-list">
+								                </span>
+								            </a>
+								            <a class="btn btn-default" data-wysihtml5-command="Outdent" href="javascript:;" tabindex="-1" title="Outdent" unselectable="on">
+								                <span class="glyphicon glyphicon-indent-right">
+								                </span>
+								            </a>
+								            <a class="btn btn-default" data-wysihtml5-command="Indent" href="javascript:;" tabindex="-1" title="Indent" unselectable="on">
+								                <span class="glyphicon glyphicon-indent-left">
+								                </span>
+								            </a>
+								        </div>
+								    </li>
+								</ul>
+							</div>
+							
+					    	<textarea rows="15" cols="110">
+					
+
+							</textarea>
+						</div>
+
+						<div class="form-group">
+						    <label class="btn btn-default btn-file">
+						        <i class="fa fa-paperclip">
+						        </i>
+						        Attachment
+						        <input name="attachment" type="file" class="hidden" />
+						    </label>
+						    <p class="help-block">
+						        Max. 32MB
+						    </p>
+						</div>
+
+					</form>
+
+				</div> <!-- Body -->
+
+				<div class="mailbox-box-footer">
+				    <div class="pull-right">
+				        <button class="btn btn-default" type="button">
+				            <i class="fa fa-pencil">
+				            </i>
+				            Draft
+				        </button>
+				        <button class="btn btn-primary" type="submit">
+				            <i class="fa fa-envelope-o">
+				            </i>
+				            Send
+				        </button>
+				    </div>
+				    <button class="btn btn-default" type="reset">
+				        <i class="fa fa-times">
+				        </i>
+				        Discard
+				    </button>
+				</div> <!-- Footer -->
+
+			</div> <!-- End Box -->
+
+		</div>
+		<!-- Content -->
+
+	</div>
+
+
+
+
+	<!-- end #search -->
+
+	<!-- begin bark_button -->
+
+	<!-- end #bark_button -->
+
+	<!-- begin scroll to top btn -->
+
+	<!-- end scroll to top btn -->
+
+	<!-- end page container -->
+
+	<!-- ================== BEGIN BASE JS ================== -->
+	
+	<script src="assets/plugins/jquery/jquery-1.12.4.min.js"></script>
+	<script src="assets/plugins/jquery/jquery-migrate-1.4.1.min.js"></script>
+	<script src="assets/plugins/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<!--[if lt IE 9]>
+<script src="assets/crossbrowserjs/html5shiv.js"></script>
+<script src="assets/crossbrowserjs/respond.min.js"></script>
+<script src="assets/crossbrowserjs/excanvas.min.js"></script>
+<![endif]-->
+	<script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="assets/plugins/jquery-cookie/jquery.cookie.js"></script>
+	<script src="assets/plugins/jquery-cookie/js.cookie.js"></script>
+	<script src="assets/plugins/pace/pace.min.js"></script>
+	<script src="assets/plugins/chartjs/Chart.min.js"></script>
+	<script src="assets/plugins/typeit/typeit.js"></script>
+	<script src="assets/plugins/countup/countUp.min.js"></script>
+	<script src="assets/js/app.js"></script>
+	<!-- ================== END BASE JS ================== -->
+	
+
+	<!-- ================== BEGIN PAGE LEVEL JS ================== -->
+	<script src="assets/plugins/sweetalert/sweetalert.min.js"></script>
+	<script src="assets/plugins/fullcalendar/lib/moment.min.js"></script>
+	<script src="assets/plugins/fullcalendar/fullcalendar.min.js"></script>
+	<script src="assets/js/pvr_app_calendar.js"></script>
+	<!-- ================== END PAGE LEVEL JS ================== -->
+</body>
+
+</html>
